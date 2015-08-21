@@ -7,7 +7,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		String dRandom = "29/JUL/2015";
+		String dRandom = "19/JUL/2015";
 		String dPayment = "20/JUL/2015";
 		try {
 			Date d2 = new SimpleDateFormat("dd/MMM/yyyy").parse(dRandom);
@@ -15,7 +15,7 @@ public class MainClass {
 			
 			int accno=3456;
 			double billedAmount=1000;
-			double amountReceived=1000;
+			double amountReceived=0;
 			System.out.println("Sending Data.");
 			UpdateTables a = new UpdateTables();
 			a.update2(accno, d2, billedAmount, amountReceived, d3);
@@ -31,3 +31,5 @@ public class MainClass {
 	}
 
 }
+
+
